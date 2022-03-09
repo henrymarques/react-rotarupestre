@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import GlobalStyle from "./globalStyle";
-import Index from "./pages/Index";
+import Home from "./pages/Home";
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
-    <Index />
+    <Home />
   </React.StrictMode>,
   document.getElementById("root")
 );
