@@ -2,11 +2,17 @@ import styled from "styled-components";
 
 export const Main = styled.div`
   background: #cf5f33;
+  text-transform: uppercase;
 
   a {
     text-decoration: none;
     color: #fff;
   }
+`;
+
+export const Logo = styled.span`
+  font-family: "Schoolbell", serif;
+  font-size: 1.8rem;
 `;
 
 export const Content = styled.div`
@@ -24,7 +30,7 @@ export const Menu = styled.div`
   flex-grow: 1;
   justify-content: space-between;
 
-  max-width: 500px;
+  max-width: 600px;
 `;
 
 export const Button = styled.a`
@@ -34,7 +40,6 @@ export const Button = styled.a`
   }
 
   font-size: 1rem;
-  text-transform: uppercase;
   font-weight: 400;
 
   border-radius: 100px;

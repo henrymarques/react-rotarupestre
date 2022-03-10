@@ -1,23 +1,26 @@
-import { Main, Menu, Button, Content } from "./styles";
+import { Link } from "react-router-dom";
+
+import { Main, Menu, Button, Content, Logo } from "./styles";
 
 export function Navbar() {
   return (
     <Main>
       <Content>
         <div>
-          <a href="/">
-            <img src="" alt="Rota Rupestre" />
-          </a>
+          <Link to="/">
+            <Logo>Rota Rupestre</Logo>
+          </Link>
         </div>
         <Menu>
-          <a href="/">Início</a>
-          <a href="/">Rotas</a>
-          <a href="/">Instituições</a>
-          <a href="/">Eixos</a>
-          <a href="/">Quem somos</a>
+          <Link to="/">Início</Link>
+          <Link to="/cidades">Cidades</Link>
+          <Link to="/noticias">Notícias</Link>
+          <Link to="/instituicoes">Instituições</Link>
+          <Link to="/eixos">Eixos</Link>
+          <a href="/equipe">Equipe</a>
         </Menu>
         <div>
-          <Button href="/">
+          <Button href="/contato">
             <span>Contato</span>
           </Button>
         </div>
