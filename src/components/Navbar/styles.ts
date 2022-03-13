@@ -8,6 +8,14 @@ export const Main = styled.div`
     text-decoration: none;
     color: #fff;
   }
+
+  /*
+  @media (max-width: 800px) {
+    & {
+      display: none;
+    }
+  }
+  */
 `;
 
 export const Logo = styled.span`
@@ -25,11 +33,12 @@ export const Content = styled.div`
   margin: 0 auto;
 `;
 
-export const Menu = styled.div`
+export const Menu = styled.ul`
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
 
+  list-style: none;
   max-width: 600px;
 `;
 

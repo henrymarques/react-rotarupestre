@@ -2,6 +2,7 @@
   "name": "react-rotarupestre",
   "private": true,
   "version": "0.0.0",
+  "license": "unlicensed",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

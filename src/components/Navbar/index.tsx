@@ -12,12 +12,24 @@ export function Navbar() {
           </Link>
         </div>
         <Menu>
-          <Link to="/">Início</Link>
-          <Link to="/cidades">Cidades</Link>
-          <Link to="/noticias">Notícias</Link>
-          <Link to="/instituicoes">Instituições</Link>
-          <Link to="/eixos">Eixos</Link>
-          <a href="/equipe">Equipe</a>
+          <li>
+            <Link to="/">Início</Link>
+          </li>
+          <li>
+            <Link to="/cidades">Cidades</Link>
+          </li>
+          <li>
+            <Link to="/noticias">Notícias</Link>
+          </li>
+          <li>
+            <Link to="/instituicoes">Instituições</Link>
+          </li>
+          <li>
+            <Link to="/eixos">Eixos</Link>
+          </li>
+          <li>
+            <a href="/equipe">Equipe</a>
+          </li>
         </Menu>
         <div>
           <Button href="/contato">
