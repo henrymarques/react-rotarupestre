@@ -11,6 +11,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
   }
+
+  @media (max-width:768px){
+    html {
+      font-size: 87.5%;
+    }
+  }
 `;
 
 export default GlobalStyle;

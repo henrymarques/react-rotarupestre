@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { Main, Menu, Button, Content, Logo } from "./styles";
 
 export function Navbar() {
@@ -7,25 +5,25 @@ export function Navbar() {
     <Main>
       <Content>
         <div>
-          <Link to="/">
+          <a href="/">
             <Logo>Rota Rupestre</Logo>
-          </Link>
+          </a>
         </div>
         <Menu>
           <li>
-            <Link to="/">Início</Link>
+            <a href="/">Início</a>
           </li>
           <li>
-            <Link to="/cidades">Cidades</Link>
+            <a href="/cidades">Cidades</a>
           </li>
           <li>
-            <Link to="/noticias">Notícias</Link>
+            <a href="/noticias">Notícias</a>
           </li>
           <li>
-            <Link to="/instituicoes">Instituições</Link>
+            <a href="/instituicoes">Instituições</a>
           </li>
           <li>
-            <Link to="/eixos">Eixos</Link>
+            <a href="/eixos">Eixos</a>
           </li>
           <li>
             <a href="/equipe">Equipe</a>

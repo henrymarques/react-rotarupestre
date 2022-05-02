@@ -1,21 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import GlobalStyle from "./globalStyle";
 
 import Eixos from "./pages/Eixos";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
-    <BrowserRouter>
+    <Eixos />
+    {/* <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/eixos" element={<Eixos />} />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

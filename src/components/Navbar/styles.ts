@@ -9,13 +9,11 @@ export const Main = styled.div`
     color: #fff;
   }
 
-  /*
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     & {
       display: none;
     }
   }
-  */
 `;
 
 export const Logo = styled.span`

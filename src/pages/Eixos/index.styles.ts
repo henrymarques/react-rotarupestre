@@ -22,7 +22,7 @@ export const Header = styled.div`
     align-items: center;
 
     svg {
-      height: 500px;
+      height: 25rem;
     }
   }
 
@@ -33,12 +33,29 @@ export const Header = styled.div`
     justify-content: center;
 
     .logo {
-      height: 200px;
+      height: 10rem;
     }
 
     .seta {
-      margin-top: 32px;
-      width: 300px;
+      margin-top: 2rem;
+      width: 15rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+    flex-direction: column-reverse;
+
+    .right {
+      .seta {
+        display: none;
+      }
+    }
+
+    .left {
+      svg {
+        height: 20rem;
+      }
     }
   }
 `;
@@ -54,8 +71,8 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  min-height: 400px;
-  background: #faf2d0;
+  /* min-height: 400px; */
+  background: #92bf98;
 
   svg {
     max-height: 39px;
@@ -63,7 +80,7 @@ export const Content = styled.div`
   }
 
   path {
-    fill: #54301930;
+    fill: #2a472d30;
   }
 
   .inverted {
