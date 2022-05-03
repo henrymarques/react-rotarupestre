@@ -3,9 +3,14 @@ import { useState } from "react";
 import { Wave } from "../../components/Wave";
 import { Navbar } from "../../components/Navbar";
 import { Footer } from "../../components/Footer";
-import { Eixos as EixosSVG, eixoTipos } from "../../components/Eixos";
+import { Eixos as EixosSVG, EixoTipos } from "../../components/Eixos";
 
-import { EixoAlimentos } from "./EixoAlimentos";
+import EixoAlimenticio from "./EixoAlimenticio";
+import EixoArqueologico from "./EixoArqueologico";
+import EixoCeramico from "./EixoCeramico";
+import EixoEconomico from "./EixoEconomico";
+import EixoFarmaceutico from "./EixoFarmaceutico";
+import Eixo6 from "./Eixo6";
 
 import { Header, Content, Main } from "./index.styles";
 
@@ -13,9 +18,9 @@ import pilar from "../../assets/pilar.png";
 import seta from "../../assets/seta.png";
 
 export default function Eixos() {
-  const [eixoVisivel, setEixoVisivel] = useState<eixoTipos>("alimentos");
+  const [eixoVisivel, setEixoVisivel] = useState<EixoTipos>("alimenticio");
 
-  function handlePathClick(name: eixoTipos) {
+  function handlePathClick(name: EixoTipos) {
     setEixoVisivel(name);
   }
 
@@ -24,7 +29,7 @@ export default function Eixos() {
       <Navbar />
       <Header>
         <div className="left">
-          <EixosSVG handlePathClick={handlePathClick} />
+          <EixosSVG className="pizzaEixos" handlePathClick={handlePathClick} />
         </div>
         <div className="right">
           <img className="logo" src={pilar} alt="Logo" />
@@ -36,13 +41,16 @@ export default function Eixos() {
         </div>
       </Header>
       <Content>
-        <Wave />
+        <Wave className="wave" />
         <Main>
-          {eixoVisivel === "alimentos" && <EixoAlimentos />}
-          {eixoVisivel === "arqueologico" && <span>Eixo arqueologico</span>}
-          {eixoVisivel === "ceramico" && <span>Eixo ceramico</span>}
+          {eixoVisivel === "alimenticio" && <EixoAlimenticio />}
+          {eixoVisivel === "arqueologico" && <EixoArqueologico />}
+          {eixoVisivel === "ceramico" && <EixoCeramico />}
+          {eixoVisivel === "farmaceutico" && <EixoEconomico />}
+          {eixoVisivel === "economico" && <EixoFarmaceutico />}
+          {eixoVisivel === "eixo6" && <Eixo6 />}
         </Main>
-        <Wave className="inverted" />
+        <Wave className="wave inverted" />
       </Content>
       <Footer />
     </>

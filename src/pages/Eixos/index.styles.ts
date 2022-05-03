@@ -21,7 +21,7 @@ export const Header = styled.div`
     justify-content: center;
     align-items: center;
 
-    svg {
+    .pizzaEixos {
       height: 25rem;
     }
   }
@@ -64,6 +64,10 @@ export const Main = styled.div`
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 1280px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -74,12 +78,12 @@ export const Content = styled.div`
   /* min-height: 400px; */
   background: #92bf98;
 
-  svg {
+  .wave {
     max-height: 39px;
     width: 100%;
   }
 
-  path {
+  .wave path {
     fill: #2a472d30;
   }
 

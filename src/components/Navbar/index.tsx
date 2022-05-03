@@ -1,9 +1,26 @@
-import { Main, Menu, Button, Content, Logo } from "./styles";
+import { useState } from "react";
+
+import { Main, Menu, Button, Content, Logo, StyledBurger } from "./styles";
 
 export function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
   return (
     <Main>
-      <Content>
+      <StyledBurger
+        className={isOpen ? "open" : "closed"}
+        onClick={handleToggle}
+      >
+        <div />
+        <div />
+        <div />
+      </StyledBurger>
+
+      <Content className={isOpen ? "open" : "closed"}>
         <div>
           <a href="/">
             <Logo>Rota Rupestre</Logo>

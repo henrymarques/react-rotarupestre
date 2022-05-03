@@ -7,6 +7,11 @@ export const Content = styled.div`
     font-family: "Schoolbell", sans-serif;
     color: #c44135;
     font-size: 3rem;
+    margin-top: 2rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   p + p {

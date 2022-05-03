@@ -1,10 +1,10 @@
-import { Content } from "./EixoAlimentos.styles";
+import { Content } from "./eixos.styles";
 
-export function EixoAlimentos() {
+export default function Index() {
   return (
     <Content>
       <div>
-        <h2>Alimentício</h2>
+        <h2>Farmaceutico</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
           quas provident dolore placeat quia, officiis maiores illo
